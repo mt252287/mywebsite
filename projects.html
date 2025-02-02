@@ -5,23 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects</title>
   <link rel="stylesheet" href="milan.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+    }
+    .project-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .project-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    p {
+      text-align: left;
+      margin: 10px 0;
+    }
+    footer {
+      margin: 20px 0;
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <h1>Project Accomplishments</h1>
-  </header>
-
+  <header>Project Accomplishments</header>
+  
   <main>
-    <p>Fenwick Library Modern Checkout System
-        <br>- Designed and developed a checkout system to improve user experience and efficiency during the summer semester of 2024.
-    </p>
-    <p>Tesla Self-Driving Vehicle Control App
-        <br>- Created a mobile app prototype for controlling Tesla's next-generation self-driving vehicle, focusing on destination setting, audio control, climate control, and seat/storage access during the summer semester of 2024.
-    </p>
-    <p>APT39 Threat Intelligence Analysis
-        <br>- Researched and developed actionable detection signatures using YARA rules to mitigate APT39's spear phishing and data exfiltration techniques.
-    </p>
+    <div class="project-container">
+      <div class="project-title">Fenwick Library Modern Checkout System</div>
+      <p>- Designed and developed a checkout system to improve user experience and efficiency during the summer semester of 2024.</p>
+    </div>
+
+    <div class="project-container">
+      <div class="project-title">Tesla Self-Driving Vehicle Control App</div>
+      <p>- Created a mobile app prototype for controlling Tesla's next-generation self-driving vehicle, focusing on destination setting, audio control, climate control, and seat/storage access during the summer semester of 2024.</p>
+    </div>
+
+    <div class="project-container">
+      <div class="project-title">APT39 Threat Intelligence Analysis</div>
+      <p>- Researched and developed actionable detection signatures using YARA rules to mitigate APT39's spear phishing and data exfiltration techniques.</p>
+    </div>
   </main>
 
   <footer>
