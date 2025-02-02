@@ -12,10 +12,11 @@ body {
 /* Header Section */
 header {
   padding: 20px;
-  background: #87CEFA; /* Light blue */
-  color: white;
+  background: white; /* Changed to white */
+  color: black; /* Changed to black */
   font-size: 24px;
   font-weight: bold;
+  border-bottom: 2px solid #555; /* Added subtle border for separation */
 }
 
 /* Intro Section */
@@ -28,7 +29,7 @@ header {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid black; /* Changed border to black */
 }
 
 /* Info Boxes Section */
@@ -41,20 +42,20 @@ header {
 }
 
 .info-box {
-  background: #d3d3d3; /* Grey */
-  color: black;
+  background: white; /* Changed to white */
+  color: black; /* Ensured text is black */
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
   width: 250px;
   text-align: center;
   transition: 0.3s;
-  border: 2px solid #555; /* Added border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visuals */
+  border: 2px solid black; /* Changed border to black */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .info-box:hover {
-  background: #b0b0b0; /* Slightly darker grey on hover */
+  background: #f0f0f0; /* Light grey hover effect */
 }
 
 /* Form Section */
@@ -66,10 +67,10 @@ header {
 form {
   max-width: 400px;
   margin: 0 auto;
-  background: #d3d3d3; /* Grey */
+  background: white; /* Changed to white */
   padding: 20px;
   border-radius: 10px;
-  border: 2px solid #555; /* Added border */
+  border: 2px solid black; /* Changed border to black */
 }
 
 label {
@@ -82,15 +83,17 @@ input, textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #555;
+  border: 1px solid black; /* Changed border to black */
   border-radius: 5px;
+  background: white; /* Ensured white background */
+  color: black; /* Ensured black text */
 }
 
 button {
   width: 100%;
   padding: 10px;
-  background: #555;
-  color: white;
+  background: black; /* Changed to black */
+  color: white; /* Changed text color to white for contrast */
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -99,18 +102,19 @@ button {
 }
 
 button:hover {
-  background: #777;
+  background: #333; /* Darker shade for hover effect */
 }
 
 /* Footer */
 footer {
-  background: #111;
+  background: white; /* Changed to white */
   padding: 20px;
   margin-top: 20px;
+  border-top: 2px solid black; /* Added subtle border for separation */
 }
 
 footer a {
-  color: white;
+  color: black; /* Changed link color to black */
   text-decoration: none;
 }
 
