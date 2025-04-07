@@ -3,52 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Milan Thapa</title>
+  <title>Milan Thapa | IT Professional</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="milan.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="container">
+    <header class="hero">
+      <div class="intro-box">
+        <div class="profile-circle">
+          <img src="mypics.jfif" alt="Milan Thapa" class="profile-pic">
+        </div>
+        <h1>Milan Thapa</h1>
+        <p class="subtitle">IT Student & Aspiring Developer</p>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> George Mason University</p>
+        
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="mailto:meelan879@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </header>
 
-  <header>
-    <div class="intro-box">
-      <img src="mypics.jfif" alt="Milan Thapa" class="profile-pic">
-      <h1>Hi, I'm Milan Thapa</h1>
-      <p>George Mason University student majoring in IT.</p>
-    </div>
-  </header>
+    <section class="info-section">
+      <div class="info-box" onclick="location.href='certifications.html'">
+        <i class="fas fa-certificate"></i>
+        <h2>Certifications</h2>
+        <p>View my professional credentials</p>
+      </div>
+      <div class="info-box" onclick="location.href='experience.html'">
+        <i class="fas fa-briefcase"></i>
+        <h2>Experience</h2>
+        <p>My work history</p>
+      </div>
+      <div class="info-box" onclick="location.href='projects.html'">
+        <i class="fas fa-project-diagram"></i>
+        <h2>Projects</h2>
+        <p>My accomplishments</p>
+      </div>
+    </section>
 
-  <section class="info-section">
-    <div class="info-box" onclick="location.href='certifications.html'">
-      <h2>Certifications</h2>
-    </div>
-    <div class="info-box" onclick="location.href='experience.html'">
-      <h2>Experience</h2>
-    </div>
-    <div class="info-box" onclick="location.href='projects.html'">
-      <h2>Project Accomplishments</h2>
-    </div>
-  </section>
+    <section class="contact-section">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="form-intro">Have a question or want to work together? Fill out the form below.</p>
 
-  <main>
-    <p class="form-intro">Please fill out the form below, and I will get back to you as soon as possible.</p>
+      <form action="/submit-form" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </section>
 
-    <form action="/submit-form" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="contact-info">
+          <h3>Contact Me</h3>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:meelan879@gmail.com">meelan879@gmail.com</a></p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+15712757674">(571) 275-7674</a></p>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Milan Thapa. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-
-      <label for="message">Your Inquiry:</label>
-      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
-
-      <button type="submit">Submit</button>
-    </form>
-  </main>
-
-  <footer>
-    <p>Contact Information:</p>
-    <p>Email: <a href="mailto:meelan879@gmail.com">meelan879@gmail.com</a> | Phone: <a href="tel:+15712757674">(571) 275-7674</a></p>
-  </footer>
-
+  <script src="milan.js"></script>
 </body>
 </html>
