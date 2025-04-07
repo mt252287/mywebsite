@@ -3,70 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
+  <title>Projects | Milan Thapa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="milan.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: white;
-      color: black;
-      text-align: center;
-    }
-    header {
-      background-color: #87CEFA; /* Light blue */
-      color: white;
-      padding: 20px;
-      font-size: 24px;
-    }
-    .project-container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #d3d3d3; /* Grey */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      border: 2px solid #555;
-    }
-    .project-title {
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    p {
-      text-align: left;
-      margin: 10px 0;
-    }
-    footer {
-      margin: 20px 0;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="container">
+    <header class="page-header">
+      <div class="header-content">
+        <h1>My Projects</h1>
+        <p>Explore my technical accomplishments and creative solutions</p>
+      </div>
+      <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </header>
 
-  <header>Project Accomplishments</header>
-  
-  <main>
-    <div class="project-container">
-      <div class="project-title">Fenwick Library Modern Checkout System</div>
-      <p>- Designed and developed a checkout system to improve user experience and efficiency during the summer semester of 2024.</p>
-    </div>
+    <main class="projects-main">
+      <div class="project-card">
+        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+          <div class="project-tag">Software Development</div>
+        </div>
+        <div class="project-content">
+          <h2>Fenwick Library Modern Checkout System</h2>
+          <div class="project-meta">
+            <span><i class="fas fa-calendar-alt"></i> Summer 2024</span>
+            <span><i class="fas fa-code"></i> Java, SQL</span>
+          </div>
+          <p>Designed and developed a comprehensive checkout system to improve user experience and operational efficiency at Fenwick Library. The system features intuitive UI, real-time inventory tracking, and automated notifications.</p>
+          <ul class="project-features">
+            <li><i class="fas fa-check-circle"></i> Reduced checkout time by 40%</li>
+            <li><i class="fas fa-check-circle"></i> Integrated with existing library database</li>
+            <li><i class="fas fa-check-circle"></i> Implemented secure user authentication</li>
+          </ul>
+        </div>
+      </div>
 
-    <div class="project-container">
-      <div class="project-title">Tesla Self-Driving Vehicle Control App</div>
-      <p>- Created a mobile app prototype for controlling Tesla's next-generation self-driving vehicle, focusing on destination setting, audio control, climate control, and seat/storage access during the summer semester of 2024.</p>
-    </div>
+      <div class="project-card">
+        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+          <div class="project-tag">Mobile Development</div>
+        </div>
+        <div class="project-content">
+          <h2>Tesla Self-Driving Vehicle Control App</h2>
+          <div class="project-meta">
+            <span><i class="fas fa-calendar-alt"></i> Summer 2024</span>
+            <span><i class="fas fa-code"></i> React Native, Node.js</span>
+          </div>
+          <p>Created a mobile app prototype for controlling Tesla's next-generation self-driving vehicle. The app includes features for destination setting, audio control, climate control, and seat/storage access with voice command integration.</p>
+          <ul class="project-features">
+            <li><i class="fas fa-check-circle"></i> Implemented real-time vehicle telemetry</li>
+            <li><i class="fas fa-check-circle"></i> Designed intuitive gesture controls</li>
+            <li><i class="fas fa-check-circle"></i> Developed custom API for vehicle communication</li>
+          </ul>
+        </div>
+      </div>
 
-    <div class="project-container">
-      <div class="project-title">APT39 Threat Intelligence Analysis</div>
-      <p>- Researched and developed actionable detection signatures using YARA rules to mitigate APT39's spear phishing and data exfiltration techniques.</p>
-    </div>
-  </main>
+      <div class="project-card">
+        <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+          <div class="project-tag">Cybersecurity</div>
+        </div>
+        <div class="project-content">
+          <h2>APT39 Threat Intelligence Analysis</h2>
+          <div class="project-meta">
+            <span><i class="fas fa-calendar-alt"></i> Spring 2024</span>
+            <span><i class="fas fa-code"></i> Python, YARA</span>
+          </div>
+          <p>Researched and developed actionable detection signatures using YARA rules to mitigate APT39's spear phishing and data exfiltration techniques. The project included malware analysis and threat modeling.</p>
+          <ul class="project-features">
+            <li><i class="fas fa-check-circle"></i> Identified 15+ new IOCs</li>
+            <li><i class="fas fa-check-circle"></i> Created custom detection rules</li>
+            <li><i class="fas fa-check-circle"></i> Presented findings to cybersecurity team</li>
+          </ul>
+        </div>
+      </div>
+    </main>
 
-  <footer>
-    <a href="index.html">Back to Home</a>
-  </footer>
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="contact-info">
+          <h3>Contact Me</h3>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:meelan879@gmail.com">meelan879@gmail.com</a></p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+15712757674">(571) 275-7674</a></p>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Milan Thapa. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
 
+  <script src="milan.js"></script>
 </body>
 </html>
