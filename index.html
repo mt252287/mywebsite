@@ -16,15 +16,15 @@
           <img src="mypics.jfif" alt="Milan Thapa" class="profile-pic">
         </div>
         <h1>Milan Thapa</h1>
-        <p class="subtitle">IT Student & Aspiring Data Analysts</p>
+        <p class="subtitle">IT Student & Aspiring Data Analyst</p>
         <p class="location"><i class="fas fa-map-marker-alt"></i> George Mason University</p>
         
-       <div class="social-links">
-  <a href="https://www.linkedin.com/in/milan-thapa17234" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/mt252287" aria-label="GitHub"><i class="fab fa-github"></i></a>
-  <a href="mailto:meelan879@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-</div>
-</div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/milan-thapa17234" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/mt252287" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:meelan879@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
     </header>
 
     <section class="info-section">
@@ -49,7 +49,19 @@
       <h2 class="section-title">Get In Touch</h2>
       <p class="form-intro">Have a question or want to work together? Fill out the form below.</p>
 
-      <form action="/submit-form" method="POST" class="contact-form">
+      <form action="https://formsubmit.co/meelan879@gmail.com" method="POST" class="contact-form">
+        <!-- Customize email subject -->
+        <input type="hidden" name="_subject" value="New Message from Portfolio Website">
+        
+        <!-- Add a thank you page (optional) -->
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+        
+        <!-- Disable captcha -->
+        <input type="hidden" name="_captcha" value="false">
+        
+        <!-- Prevent spam by filtering out bots -->
+        <input type="text" name="_honey" style="display:none">
+        
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name" required>
